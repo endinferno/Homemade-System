@@ -1,6 +1,18 @@
 # Homemade-System
 This is a Easy System Implemented by C++
 
+## Physical Address
+
+In my code, physics address means real address. You can access the content by the address.
+
+## Address
+
+Address means Address relative to the original address.
+
+
+
+
+
 * memory space
 	* 16MB
 * disk space
@@ -31,5 +43,5 @@ This is a Easy System Implemented by C++
 	2. 1 Page table contains **1024** Page table items, and Every Page table item can address **4KB** physical space.
 	3. When we fill in the Page table items, we should fill in items from the end to the start.
 	4. Every page's size is **4KB**, so the start physical address of the last page is 0xFF F000.
-	5. So the Page table item should be $The Start Address + User Attribute = 0xFF F000 + 0x00 0007 = 0xFF F007$
+	5. So the Page table item should be $The Start Address + User Attribute = 0{\times}FF F000 + 0{\times}00 0007 = 0{\times}FF F007$
 
